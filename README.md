@@ -1,10 +1,11 @@
-# Projekt: system zamówień dla pasażerów
+# Projekt inżynierski
 Stack: Java 21 + Spring Boot 4, PostgreSQL, React Native (Android), SQLite.
 Architektura: terminal ↔(REST/LAN) serwer pokładowy ↔(REST) centrala. Zob. docs/architecture.md
 
 ## Start lokalny
 cp .env.example .env
 docker compose up -d --build
+
 Centrala: http://localhost:8080   Pokład 1: http://localhost:8082
 Sprawdzenie: curl localhost:8080/actuator/health
 
